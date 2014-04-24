@@ -6,13 +6,13 @@ $(document).ready(function(){
 
 			clearInterval(intervalo);
 
-			efeito = $(this).data("efect");
+			efeito = $(this).data("effect");
 
 			if($obj.hasClass(efeito)){
 				$obj.removeClass(efeito);
 			}
 
-			$obj.removeClass(classe).addClass($(this).data("efect"));
+			$obj.removeClass(classe).addClass($(this).data("effect"));
 			classe = efeito;
 
 			intervalo = setTimeout(function(){
